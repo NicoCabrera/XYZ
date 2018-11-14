@@ -1,0 +1,103 @@
+﻿@model List<XYZ.Models.Persona>
+
+@{
+    ViewBag.Title = "Tables";
+}
+
+<h1>Tablas</h1>
+<p>Se usa la clase <code>table</code>.</p>
+<table class="table">
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td>@person.name</td>
+            <td>@person.age</td>
+        </tr>
+    }
+</table>
+
+<p>La clase <code>table table-striped</code></p>
+<table class="table table-striped">
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td>@person.name</td>
+            <td>@person.age</td>
+        </tr>
+    }
+</table>
+
+<p>La clase <code>table table-bordered</code></p>
+<table class="table table-bordered">
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td>@person.name</td>
+            <td>@person.age</td>
+        </tr>
+    }
+</table>
+
+<p>La clase <code>table table-hover</code></p>
+<table class="table table-hover">
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td>@person.name</td>
+            <td>@person.age</td>
+        </tr>
+    }
+</table>
+
+<p>La clase <code>table table-condensed</code></p>
+<table class="table table-condensed">
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td>@person.name</td>
+            <td>@person.age</td>
+        </tr>
+    }
+</table>
+
+<p>Se pueden usar 5 clases contextuales, las predefinidas por Bootstrap para indicar distintos estados de cada una de las filas</p>
+<table class="table">
+    <tr>
+        <th>Clase</th>
+    </tr>
+    <tr class="success">
+        <td>success</td>
+    </tr>
+    <tr class="danger">
+        <td>danger</td>
+    </tr>
+    <tr class="warning">
+        <td>warning</td>
+    </tr>
+    <tr class="active">
+        <td>active</td>
+    <tr class="info">
+        <td>info</td>
+    </tr>
+    </tr>
+</table>

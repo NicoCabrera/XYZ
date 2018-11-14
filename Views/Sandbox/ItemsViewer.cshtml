@@ -1,0 +1,20 @@
+﻿@model List<XYZ.Models.Persona>
+
+@{
+    ViewBag.Title = "ItemsViewer";
+}
+
+<table class="table">
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+    <tr>
+        <td>@person.name</td>
+        <td>@person.age</td>
+    </tr>
+    }
+</table>
+

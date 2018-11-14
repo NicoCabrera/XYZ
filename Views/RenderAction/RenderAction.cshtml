@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "RenderAction";
+}
+
+<h2>RenderAction</h2>
+<p>RenderAction es un método del objeto <code>Html</code> que nos permite insertar una vista dentro de otra.</p>
+
+<h2>El siquiente contenido pertenece a la vista 'Contact', la cual será insertada mediente el método <code>RenderAction</code>.</h2>
+<div class="container" style="border:1px solid blue">
+    @{
+        Html.RenderAction("Contact", "Home");
+    }
+</div>
+<h2>Action</h2>
+<p>Se puede utilizar el metodo <code>Action</code> del objeto Html, y realiza el mismo trabajo que RenderAction, con la salvedad de que el metodo Action retorna un <code>string</code> mientras que RenderAction no tiene valor de retorno.</p>
+

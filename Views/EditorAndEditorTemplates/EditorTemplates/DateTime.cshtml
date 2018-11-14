@@ -1,0 +1,19 @@
+﻿@model DateTime?
+
+@{
+
+    if (!Model.HasValue)
+    {
+        <div class="form-group">
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="birthdate" class="form-control" />
+        </div>
+    }
+    else
+    {
+        <div class="form-group">
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="birthdate" value="@Model.Value.ToString("yyyy-MM-dd")"  class="form-control"/>
+        </div>
+    }
+}

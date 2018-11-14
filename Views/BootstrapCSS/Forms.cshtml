@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "Forms";
+}
+
+<h2>Forms</h2>
+<p>Creo un formulario con la etiqueta correspondiente <code>form</code>.<br>Dentro del formulario iran los elementos como por ejemplo, inputs.</p>
+
+<h3>Ejemplo de input</h3>
+<form>
+    <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" placeholder="Ingrese su nombre" class="form-control"/>
+    </div>
+</form>
+
+<p>Cada control debe existir dentro de un <code>div</code> de clase <code>form-group</code>. Se utiliza un <code>label</code> seguido del <code>input</code> de clase <code>form-control</code>.</p>
+
+<h3>Ejemplo de File Input</h3>
+
+<form>
+    <div class="form-group">
+        <label>Foto del perfil</label>
+        <input type="file"/>
+        <p class="help-block">Texto de clase "help-block"</p>
+    </div>
+
+</form>
+
+<h3>Ejemplo de checkbox</h3>
+<p>Para los <code>checkbox</code> se usa un elemento input de ese tipo, dentro un un label que es hijo de un div de clase <code>checkbox</code>.</p>
+<form>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" name="exampleCheckbox"/>
+            Checkbox 1
+        </label>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" name="example2Checkbox"/>
+            Checkbox 2
+        </label>
+    </div>
+</form>
+
+<h3>Ejemplo radibutton</h3>
+<p>Para los radiobutton es identico al caso de los checkbox. Se crea un div de clase <code>radio</code> que anidará un elemento <code>label</code> que contendra un <code>input</code> de tipo <code>radio</code> con su correspondiente id, pero deberán contener un <code>name</code> en común.</p>
+<form>
+    <div class="radio">
+        <label>
+            <input type="radio" name="compartido" id="1" />
+            1
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="compartido" id="2" />
+            2
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="compartido" id="3" />
+            3
+        </label>
+    </div>
+</form>
+
+<h3>Ejemplo textarea</h3>
+<p>Es simple, un tag textarea de clase <code>form-control</code> indicando el atributo row, cuántas filas tendrá el componente.</p>
+<form>
+    <textarea class="form-control" rows="3"></textarea>
+</form>
+
+
+<h3>Ejemplo de select</h3>
+<p>Se usa un elemento <code>select</code> de clase <code>form-control</code> anidando elementos <code>option</code>.</p>
+<form>
+    <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+</form>

@@ -1,0 +1,20 @@
+﻿@model Boolean
+@{
+    ViewBag.Title = "Display";
+}
+
+<h2>Display</h2>
+<p>El método <code>Display</code> del objeto <code>Html</code> permite mostrar el contenido del <code>ViewBag</code> si enviamos por parámetro el nombre de la propiedad en cuestión.</p>
+<p>En el caso de se un objeto, se mostrará tanto el nombre de las propiedades de dicho objeto asi como el valor que contiene.</p>
+
+<h2>Carpeta DisplayTemplates</h2>
+<p>Si creamo el directorio 'Views/CualquierVista/DisplayTemplates' tenemos la posibilidad de customizar la manera en la cual el método <code>Display</code> muestre los datos contenidos en el modelo.</p>
+
+<h2>Ejemplo de Display utilizando DisplayTemplates</h2>
+<p>Se ha creado el directorio DisplayTemplates y el archivo que modifica la presentacion de los booleanos.<br>En el siguiente ejemplo mostramos el contenido de una propiedad del ViewBag cuyo valor es un <code>true</code>.</p>
+
+@Html.DisplayFor(model=>model)
+
+@Html.Display("ReturnValue")
+
+<p>También se puede utilizar el método <code>DisplayFor</code> del objeto <code>Html</code> que recibe como parametro una arrowfunction, que necesita obtener el modelo.</p>

@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "ActionLink";
+}
+
+<h2>ActionLink</h2>
+<p>Se puede direccionar desde el cliente utilizando los <code>ActionLink</code> del objeto <code>Html</code>.</p>
+<!-- El primer parametro es el texto que se verá desde el cliente, luego el Action, y opcionalmente el Controller ya que por defecto se buscará la Action dentro del Controller actual-->
+@Html.ActionLink("Ir a la página principal","Index","Home")
+

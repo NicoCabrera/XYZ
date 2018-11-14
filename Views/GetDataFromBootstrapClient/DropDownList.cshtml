@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "DropDownList";
+}
+
+<h2>DropDownList</h2>
+
+<label>Eliga una opción:</label>
+<select class="form-control">
+    @foreach (var item in ViewBag.itemList)
+    {
+        <option>@item.Text</option>
+    }
+</select>
+
